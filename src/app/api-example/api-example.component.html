@@ -1,0 +1,7 @@
+
+<div *ngFor="let art of artworks">
+  <img [src]="art.thumbnail.lqip" alt="">
+  {{art.title}}
+</div>
+
+<button (click)="fetch()">Fetch !</button>

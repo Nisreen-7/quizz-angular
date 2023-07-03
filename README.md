@@ -20,4 +20,4 @@ Faire du css pour afficher en vert la bonne réponse et en rouge les mauvaises
 	
 Faire qu'une fois qu'on a répondu à toutes les questions il se passe quelque chose (une modal, une alert ou autre, qui nous affiche notre score total par exemple)
 
-on a modifié les etape ,apres appoyer sur un answer,il faut appoyer sue le button next pour aller al page suivante 
+### on a modifié les etape ,apres appoyer sur un answer,il faut appoyer sue le button next pour aller al page suivante. 

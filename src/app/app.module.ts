@@ -5,16 +5,20 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { QuizzComponent } from './quizz/quizz.component';
 import { QuizzItemComponent } from './quizz-item/quizz-item.component';
+import { ApiExampleComponent } from './api-example/api-example.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuizzComponent,
-    QuizzItemComponent
+    QuizzItemComponent,
+    ApiExampleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
