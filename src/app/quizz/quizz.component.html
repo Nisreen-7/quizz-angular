@@ -1,0 +1,10 @@
+<h1>Un sacré quizz</h1>
+<p>Score : {{score}}</p>
+<ng-container  *ngFor="let item of list; let index =index">
+    <app-quizz-item [quizz]="item" (choose)="nextQuestion()" (goodAnswer)="incrementScore()" *ngIf="current == index"></app-quizz-item>
+</ng-container>
+
+<p *ngIf="current >= list.length">
+    End of quizz
+    <button (click)="reset()">Again !</button>
+</p>

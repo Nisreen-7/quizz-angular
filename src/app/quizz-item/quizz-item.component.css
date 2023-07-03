@@ -1,0 +1,10 @@
+.good {
+  background-color: green;
+  color: white;
+}
+
+.bad {
+
+  background-color: darkred;
+  color: white;
+}

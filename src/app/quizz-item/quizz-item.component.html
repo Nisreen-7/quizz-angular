@@ -1,0 +1,8 @@
+<h3>{{quizz.question}}</h3>
+
+<button [ngClass]="{'good': status && index == quizz.answer, 'bad': status && index != quizz.answer}" (click)="chooseAnswer(index)" *ngFor="let option of quizz.options; let index = index">{{option}}</button>
+
+<p *ngIf="status == 'good'">Bonne réponse !</p>
+<p *ngIf="status == 'bad'">Mauvaise réponse !</p>
+
+<button *ngIf="status != ''" (click)="next()">Next</button>
